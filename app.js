@@ -8,11 +8,12 @@ var mongoose = require("mongoose");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 mongoose.connect(
-  "mongodb://localhost:27017/uzeg",
+  "mongodb+srv://admin:s80BaT6V35Xlz4Nu@cluster0-e9ypg.mongodb.net/uzeg?retryWrites=true&w=majority",
   {
-    useNewUrlParser: true,
     useCreateIndex: true,
+    useNewUrlParser: true,
     useUnifiedTopology: true,
+    useFindAndModify: false,
   },
   () => {
     console.log("connected to database");
