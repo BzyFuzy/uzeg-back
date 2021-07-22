@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34.819" height="26.997" viewBox="0 0 34.819 26.997">
+  <g id="Group_223" data-name="Group 223" transform="translate(-2967.417 -10401)">
+    <g id="Icon_ionic-ios-book" data-name="Icon ionic-ios-book" transform="translate(2969.618 10396.5)">
+      <path id="Path_241" data-name="Path 241" d="M10.266,4.507c3.8,0,7.031,1.962,7.031,5.766V11.4h0V31.359a.138.138,0,0,1-.267.049V31.4a6.612,6.612,0,0,0-5.787-4.957A8.925,8.925,0,0,0,4.7,29.053a.758.758,0,0,1-.464.2H3.916c-.26,0-.534-.19-.534-.429v-1.8L4.7,24.75s9.631,2.128,9.713-8.435c0-3.428-3.032-5.4-4.762-6.144-2.932-1.264-6.266.284-6.266.284v-2C3.375,6.195,6.462,4.507,10.266,4.507Z" fill="#fff"/>
+      <path id="Path_242" data-name="Path 242" d="M25.734,4.5c-3.8,0-7.031,1.962-7.031,5.766v1.125h0V31.352a.138.138,0,0,0,.267.049v-.007a6.68,6.68,0,0,1,5.787-4.957A8.909,8.909,0,0,1,31.3,29.046a.8.8,0,0,0,.464.2h.316c.26,0,.534-.19.534-.429V8.438C32.625,6.188,29.538,4.5,25.734,4.5Z" fill="#fff"/>
+    </g>
+    <g id="Icon_feather-search" data-name="Icon feather-search" transform="matrix(0.966, -0.259, 0.259, 0.966, 2967.918, 10410.233)">
+      <path id="Path_243" data-name="Path 243" d="M4.5,10.034A5.534,5.534,0,1,0,10.034,4.5,5.534,5.534,0,0,0,4.5,10.034Z" transform="translate(-3.116 -4.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_244" data-name="Path 244" d="M24.975,27.984l3.009-3.009" transform="translate(-24.975 -15.532)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
