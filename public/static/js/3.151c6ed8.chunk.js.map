@@ -1,1 +1,0 @@
-{"version":3,"sources":["views/journalist/home/index.js"],"names":["Home"],"mappings":"+HAIeA,UAJF,WACT,OAAO","file":"static/js/3.151c6ed8.chunk.js","sourcesContent":["const Home = () => {\r\n    return <div>JHome</div>\r\n}\r\n\r\nexport default Home;"],"sourceRoot":""}
