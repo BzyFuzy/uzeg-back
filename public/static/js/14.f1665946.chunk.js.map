@@ -1,0 +1,1 @@
+{"version":3,"sources":["views/source/report/index.js"],"names":["Report"],"mappings":"8GAAA,+DAEe,SAASA,IACpB,OACI","file":"static/js/14.f1665946.chunk.js","sourcesContent":["import React from 'react'\r\n\r\nexport default function Report() {\r\n    return (\r\n        <div>\r\n            Report\r\n        </div>\r\n    )\r\n}\r\n"],"sourceRoot":""}

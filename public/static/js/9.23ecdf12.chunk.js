@@ -1,2 +1,0 @@
-(this["webpackJsonpfront-end"]=this["webpackJsonpfront-end"]||[]).push([[9],{68:function(n,t,e){"use strict";e.r(t);var r=e(0);t.default=function(){return Object(r.jsx)("div",{children:"JSource"})}}}]);
-//# sourceMappingURL=9.23ecdf12.chunk.js.map

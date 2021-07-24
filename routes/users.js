@@ -71,4 +71,24 @@ router.get("/me/logoutall", auth, async (req, res) => {
   }
 });
 
+/* 002 - start */
+
+router.get("/get/journalist", async (req, res) => {
+  try {
+    User.find({ role: "journalist" })
+      .select({ username: 1, email: 1, created: 1 })
+      .exec((err, result) => {
+        if (!err) {
+          res.json({ status: "amjilttai", result });
+        } else {
+          res.json({ status: "failed", result: "002-001" });
+        }
+      });
+  } catch (error) {
+    res.json({ status: 0, result: "failed" });
+  }
+});
+
+/* 002 - end */
+
 module.exports = router;

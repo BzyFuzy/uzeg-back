@@ -1,0 +1,1 @@
+{"version":3,"sources":["views/journalist/education/index.js"],"names":["Education"],"mappings":"6GAAA,+DAEe,SAASA,IACpB,OACI","file":"static/js/9.f2ce9000.chunk.js","sourcesContent":["import React from 'react'\r\n\r\nexport default function Education() {\r\n    return (\r\n        <div>\r\n            Education\r\n        </div>\r\n    )\r\n}\r\n"],"sourceRoot":""}

@@ -1,1 +1,0 @@
-{"version":3,"sources":["views/journalist/analyst/index.js"],"names":["Analyst"],"mappings":"uKAAe,SAASA,IACpB,OACI","file":"static/js/6.a1b87798.chunk.js","sourcesContent":["export default function Analyst() {\r\n    return (\r\n        <div>\r\n            Analyst\r\n        </div>\r\n    )\r\n}\r\n\r\n"],"sourceRoot":""}
