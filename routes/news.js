@@ -18,11 +18,26 @@ router.post("/", auth, (req, res) => {
       if (!err) {
         res.json({ status: "amjilttai", result });
       } else {
-        res.json({ status: 0, result: "failed 3-2" });
+        res.json({ status: 0, result: "failed 3-0-2" });
       }
     });
   } catch (error) {
-    res.json({ status: 0, result: "failed 3-1" });
+    res.json({ status: 0, result: "failed 3-0-1" });
+  }
+});
+
+router.get("/", auth, (req, res) => {
+  try {
+    console.log(req.user._id)
+    News.find({ publisher: req.user._id }).exec((err, result) => {
+      if (!err) {
+        res.json({ status: "amjilttai", result });
+      } else {
+        res.json({ status: 0, result: "failed 3-1-2" });
+      }
+    });
+  } catch (error) {
+    res.json({ status: 0, result: "failed 3-1-1" });
   }
 });
 
