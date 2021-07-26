@@ -7,6 +7,7 @@ const newsSchema = mongoose.Schema({
   category: { type: String },
   body: { type: String },
   publisher: { type: ObjectId, ref: "User" },
+  image: { type: String },
   created: { type: Date, default: Date.now },
 });
 

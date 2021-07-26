@@ -8,7 +8,11 @@ const express = require("express"),
 
 router.post("/", auth, (req, res) => {
   try {
-    let news = { ...req.body, category: req.body.category.toLowerCase() };
+    let news = {
+      ...req.body,
+      category: req.body.category.toLowerCase(),
+      publisher: req.user._id,
+    };
     const newNews = new News(news);
     newNews.save((err, result) => {
       if (!err) {
