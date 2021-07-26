@@ -4,6 +4,7 @@ const ObjectId = mongoose.Schema.Types.ObjectId;
 const newsSchema = mongoose.Schema({
   brief: { type: String },
   title: { type: String },
+  category: { type: String },
   body: { type: String },
   publisher: { type: ObjectId, ref: "User" },
   created: { type: Date, default: Date.now },

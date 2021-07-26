@@ -8,10 +8,17 @@ const express = require("express"),
 
 router.post("/", auth, (req, res) => {
   try {
-    const newNews = new News(req.body);
-    
+    let news = { ...req.body, category: req.body.category.toLowerCase() };
+    const newNews = new News(news);
+    newNews.save((err, result) => {
+      if (!err) {
+        res.json({ status: "amjilttai", result });
+      } else {
+        res.json({ status: 0, result: "failed 3-2" });
+      }
+    });
   } catch (error) {
-    res.json({ status: 0, result: "failed" });
+    res.json({ status: 0, result: "failed 3-1" });
   }
 });
 

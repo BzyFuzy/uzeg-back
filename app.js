@@ -21,6 +21,7 @@ var upload = multer({ storage: storage });
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
+var newsRouter = require("./routes/news");
 mongoose.connect(
   "mongodb+srv://admin:s80BaT6V35Xlz4Nu@cluster0-e9ypg.mongodb.net/uzeg?retryWrites=true&w=majority",
   {
@@ -65,7 +66,7 @@ app.post(
 
 app.use("/", indexRouter);
 app.use("/api/user", usersRouter);
-
+app.use("/api/news", newsRouter);
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
