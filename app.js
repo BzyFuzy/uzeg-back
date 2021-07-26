@@ -42,7 +42,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-
 app.get("/news/image/:filename", (req, res) => {
   const { filename } = req.params;
   const dirname = path.resolve();
@@ -71,13 +70,13 @@ app.post(
 app.use("/api/user", usersRouter);
 app.use("/api/news", newsRouter);
 
-app.use("/reader", express.static(path.join(__dirname, "reader")));
-app.get("/reader/*", function (req, res) {
-  return res.sendFile(path.resolve(__dirname, "reader", "index.html"));
-});
+// app.use("/reader", express.static(path.join(__dirname, "reader")));
+// app.get("/reader/*", function (req, res) {
+//   return res.sendFile(path.resolve(__dirname, "reader", "index.html"));
+// });
 
-app.use('/', express.static(path.join(__dirname, "public")));
-app.get('/*', (req, res) => {
+app.use(express.static(path.join(__dirname, "public")));
+app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
