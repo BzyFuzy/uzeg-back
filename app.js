@@ -22,6 +22,7 @@ var upload = multer({ storage: storage });
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var newsRouter = require("./routes/news");
+const News = require("./models/news");
 mongoose.connect(
   "mongodb+srv://admin:s80BaT6V35Xlz4Nu@cluster0-e9ypg.mongodb.net/uzeg?retryWrites=true&w=majority",
   {
@@ -44,11 +45,18 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "public")));
-app.get('/news/image/:filename', (req, res) => {
+
+
+app.get("/news/image/:filename", (req, res) => {
   const { filename } = req.params;
   const dirname = path.resolve();
   const fullfilepath = path.join(dirname, "images", "news/" + filename);
+  return res.sendFile(fullfilepath);
+});
+app.get("/images/profile/:filename", (req, res) => {
+  const { filename } = req.params;
+  const dirname = path.resolve();
+  const fullfilepath = path.join(dirname, "images", "profiles/" + filename);
   return res.sendFile(fullfilepath);
 });
 app.post(
@@ -67,9 +75,17 @@ app.post(
 app.use("/", indexRouter);
 app.use("/api/user", usersRouter);
 app.use("/api/news", newsRouter);
-app.get("*", (req, res) => {
+
+app.use("/reader", express.static(path.join(__dirname, "reader")));
+app.get("/reader/*", function (req, res) {
+  return res.sendFile(path.resolve(__dirname, "reader", "index.html"));
+});
+
+app.use('/', express.static(path.join(__dirname, "public")));
+app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
+
 // app.use(function (req, res, next) {
 //   next(createError(404));
 // });

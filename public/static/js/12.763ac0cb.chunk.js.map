@@ -1,1 +1,0 @@
-{"version":3,"sources":["views/journalist/workspace/index.js"],"names":["WorkSpace"],"mappings":"8GAAA,+DAEe,SAASA,IACpB,OACI","file":"static/js/12.763ac0cb.chunk.js","sourcesContent":["import React from 'react'\r\n\r\nexport default function WorkSpace() {\r\n    return (\r\n        <div>\r\n            workspace\r\n        </div>\r\n    )\r\n}\r\n"],"sourceRoot":""}

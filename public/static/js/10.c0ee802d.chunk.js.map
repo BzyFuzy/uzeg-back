@@ -1,1 +1,0 @@
-{"version":3,"sources":["views/journalist/profile/index.js"],"names":["Profile"],"mappings":"8GAAA,+DAEe,SAASA,IACpB,OACI","file":"static/js/10.c0ee802d.chunk.js","sourcesContent":["import React from 'react'\r\n\r\nexport default function Profile() {\r\n    return (\r\n        <div>\r\n            profile\r\n        </div>\r\n    )\r\n}\r\n"],"sourceRoot":""}
