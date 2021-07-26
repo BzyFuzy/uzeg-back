@@ -1,0 +1,1 @@
+{"version":3,"sources":["views/journalist/source/index.js"],"names":["Source"],"mappings":"iIAIeA,UAJA,WACX,OAAO","file":"static/js/14.246ff2a9.chunk.js","sourcesContent":["const Source = () => {\r\n    return <div>JSource</div>\r\n}\r\n\r\nexport default Source;"],"sourceRoot":""}
