@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+  <g id="Help_bttn" data-name="Help bttn" transform="translate(1 1)">
+    <path id="Path_13" data-name="Path 13" d="M1943.538,1175.989l-.683-.683Zm-7.538-2.663a.961.961,0,1,0,1.923,0Zm3.846,6.8a.962.962,0,1,0,1.923,0Zm3.846-6.8a2.768,2.768,0,0,1-.836,1.981l1.356,1.365a4.693,4.693,0,0,0,1.4-3.346Zm-5.769,0a2.855,2.855,0,0,1,2.885-2.817v-1.923a4.777,4.777,0,0,0-4.807,4.74Zm2.885-2.817a2.855,2.855,0,0,1,2.885,2.817h1.923a4.777,4.777,0,0,0-4.808-4.74Zm2.048,4.8a20.88,20.88,0,0,0-1.885,1.971,4.59,4.59,0,0,0-1.125,2.846h1.923a2.755,2.755,0,0,1,.712-1.664,19.851,19.851,0,0,1,1.731-1.788Z" transform="translate(-1928.308 -1164.018)" fill="#d4938b" stroke="#d4938b" stroke-width="1"/>
+    <path id="Path_14" data-name="Path 14" d="M1941,1184.585v.481" transform="translate(-1928.5 -1164.633)" fill="none" stroke="#d4938b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="12.5" cy="12.5" r="12.5" fill="none" stroke="#d4938b" stroke-width="2"/>
+  </g>
+</svg>

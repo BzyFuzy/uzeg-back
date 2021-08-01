@@ -1,0 +1,49 @@
+.card {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+  z-index: 1;
+  .row {
+      display: flex;
+  }
+}
+.jhome {
+  font-family: Montserrat;
+  .card {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #212543;
+ 
+    .title {
+      padding: 30px 116px;
+      border-radius: 0px 40px 40px 0px;
+      background: #d4938b;
+      width: max-content;
+      height: max-content;
+      p {
+        font-weight: normal;
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+  }
+
+  .card::before {   
+    z-index: -1; 
+    content: "";
+    background-image: url('../img/b-logo.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 30%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.2;
+}
+
+  
+}
